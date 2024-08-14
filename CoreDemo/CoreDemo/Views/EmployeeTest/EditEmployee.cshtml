@@ -1,0 +1,20 @@
+﻿@using CoreDemo.Controllers
+@model List<CoreDemo.Controllers.EmployeeTestController.Class1>
+
+
+@{
+    ViewData["Title"] = "EditEmployee";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<form method="post">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <label>ID</label>
+        @Html.TextBoxFor(x => x[i].ID, new { @class = "form-control" })
+        <br />
+        <label>Personel</label>
+        @Html.TextBoxFor(x => x[i].Name, new { @class = "form-control" })
+        <br />
+    }
+    <button class="btn btn-outline-success">Güncelle</button>
+</form>

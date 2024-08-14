@@ -1,0 +1,50 @@
+﻿@model UserUpdateViewModel
+
+
+@{
+    ViewData["Title"] = "WriterEditProfile";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+
+                <div class="col-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Basic form elements</h4>
+                            <p class="card-description"> Basic form elements </p>
+                            <br />
+                            
+                            <form class="forms-sample" method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputName1">Name</label>
+                                    <input type="text" asp-for="@Model.namesurname" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">User Name</label>
+                                    <input type="text" asp-for="@Model.username" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">Email address</label>
+                                    <input type="text" asp-for="@Model.mail" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">New Password</label>
+                                    <input type="text" asp-for="@Model.password" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">Image path</label>
+                                    <input type="image" asp-for="@Model.imageurl" class="form-control" />
+                                </div>
+
+
+                            </form>
+                            <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                            <button class="btn btn-light">Cancel</button>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+
+

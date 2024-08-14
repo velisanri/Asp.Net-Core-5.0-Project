@@ -1,0 +1,20 @@
+﻿@using CoreDemo.Controllers
+@model List<EmployeeTestController.Class1>
+
+
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<form method="post">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <label>Çalışan Adı Soyadı </label>
+        <input type="text" asp-for="@Model[i].Name" class="form-control" />
+
+        <br />
+    }
+
+    <button type="submit" class="btn btn-info"> çalışan ekle</button>
+</form>

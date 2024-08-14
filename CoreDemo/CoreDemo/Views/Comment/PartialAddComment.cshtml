@@ -1,0 +1,12 @@
+﻿<div class="comment-top">
+    <h4>Leave a Comment</h4>
+    <div class="comment-bottom">
+        <form method="post" asp-action="PartialAddComment" asp-controller="Comment" >
+            <input class="form-control" type="text" name="CommentUserName" placeholder="Name" required="">
+            <input class="form-control" type="text" name="CommentTitle" placeholder="Title" required="">
+
+            <textarea class="form-control" name="CommentContent" placeholder="Message..." required=""></textarea>
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+    </div>
+</div>
