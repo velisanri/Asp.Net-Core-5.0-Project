@@ -16,7 +16,7 @@ CRUD Operations
 
 Generic Repository Pattern
 
-Excel Export
+Sending data to EXCEL
 
 ASP.NET Core Identity And User Authentication
 
